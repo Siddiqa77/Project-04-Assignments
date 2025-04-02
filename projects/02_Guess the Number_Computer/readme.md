@@ -1,36 +1,45 @@
-# Guess the Number - Computer Guesses
+# Computer Guesses the Number
 
 ## Overview
-This version of "Guess the Number" flips the game: instead of the player guessing the number, the computer tries to guess the player's chosen number. The player provides feedback after each guess, guiding the computer until it finds the correct number.
+This is a Python program where the computer tries to guess a number that the user is thinking of. The user provides hints, and the program narrows down the possible numbers using a binary search approach.
 
-## Features
-- The player picks a secret number between 1 and 100.
-- The computer makes a guess and the player responds with "higher", "lower", or "correct".
-- The computer adjusts its guess based on the player's feedback.
-- The game continues until the correct number is found.
+## How It Works
+1. The user thinks of a number between 1 and 100.
+2. The program makes a guess.
+3. The user responds with:
+   - `h` if the number is higher.
+   - `l` if the number is lower.
+   - `c` if the guess is correct.
+4. The program continues adjusting its guesses until it correctly finds the number.
 
-## How to Run
-1. Ensure you have Python installed on your system.
-2. Run the script using:
-   ```sh
-   python guess_the_number_computer.py
+## Prerequisites
+- Python 3.x installed on your system.
+
+## How to Run the Program
+1. Clone this repository or copy the script.
+2. Run the script using the following command:
+   ```bash
+   python computer_guess.py
    ```
-3. Think of a number between 1 and 100.
-4. Respond to the computer’s guesses with "higher", "lower", or "correct".
+3. Follow the on-screen instructions.
 
-## Example Run
+## Example Output
 ```
 Think of a number between 1 and 100, and I'll try to guess it!
-Is it 50? (higher/lower/correct): higher
-Is it 75? (higher/lower/correct): lower
-Is it 62? (higher/lower/correct): correct
-I guessed your number in 3 attempts!
+Is your number 50?
+Enter 'h' if it's higher, 'l' if it's lower, or 'c' if correct: h
+Is your number 75?
+Enter 'h' if it's higher, 'l' if it's lower, or 'c' if correct: l
+...
+Yay! I guessed your number 63 in 5 attempts.
 ```
 
-## Future Enhancements
-- Allow different number ranges.
-- Implement an AI that optimizes guessing strategies.
-- Add a mode where the computer cheats for fun.
+## License
+This project is open-source and available for modification and redistribution.
 
-Enjoy playing "Guess the Number - Computer Guesses"! 🎉
+## Contributions
+Feel free to improve the program and submit a pull request!
 
+Happy coding! 🚀
+
+cc

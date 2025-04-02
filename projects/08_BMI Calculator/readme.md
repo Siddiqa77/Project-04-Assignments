@@ -1,41 +1,47 @@
-# BMI Calculator
+# BMI Calculator using Python and Streamlit
 
 ## Overview
-The BMI (Body Mass Index) Calculator is a Python script that calculates a user's BMI based on their weight and height and categorizes them accordingly.
+This is a simple **BMI (Body Mass Index) Calculator** built using Python and Streamlit. Users can enter their weight and height, and the application calculates their BMI and categorizes it.
 
 ## Features
-- Takes user input for weight (kg) and height (meters).
-- Calculates the BMI using the formula: `BMI = weight / (height^2)`.
-- Categorizes the BMI as:
-  - Underweight (<18.5)
-  - Normal weight (18.5 - 24.9)
-  - Overweight (25 - 29.9)
-  - Obese (30 and above)
+- Accepts user input for weight (kg) and height (m)
+- Calculates BMI using the formula: `BMI = weight / (height ** 2)`
+- Provides feedback on BMI category:
+  - **Underweight** (BMI < 18.5)
+  - **Normal weight** (18.5 ≤ BMI < 24.9)
+  - **Overweight** (25 ≤ BMI < 29.9)
+  - **Obese** (BMI ≥ 30)
+- Interactive UI using **Streamlit**
 
-## How to Use
-1. Run the script using Python.
-2. Enter your weight in kilograms.
-3. Enter your height in meters.
-4. The script calculates and displays your BMI along with your category.
+## Prerequisites
+- Python 3.x installed
+- Streamlit library installed (`pip install streamlit`)
 
-## Running the Script
-Ensure you have Python installed, then run the script:
-```sh
-python bmi_calculator.py
+## How to Run
+1. Clone this repository or copy the script.
+2. Install dependencies:
+   ```bash
+   pip install streamlit
+   ```
+3. Run the application:
+   ```bash
+   streamlit run bmi_calculator.py
+   ```
+4. Open the provided local URL in your browser to use the BMI calculator.
+
+## Example Output
 ```
-
-## Example Run
-```
-Enter your weight in kg: 70
-Enter your height in meters: 1.75
+Enter your weight (kg): 70
+Enter your height (m): 1.75
 Your BMI is: 22.86
-Category: Normal weight
+Category: Normal weight ✅
 ```
 
-## Future Enhancements
-- Add support for height in feet and inches.
-- Provide health recommendations based on BMI.
-- Implement a graphical user interface (GUI).
+## License
+This project is open-source and available for modification and redistribution.
 
-Stay healthy! 🏋️‍♂️
+## Contributions
+Feel free to improve the project and submit a pull request!
+
+Happy coding! 🚀
 

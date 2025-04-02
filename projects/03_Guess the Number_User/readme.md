@@ -1,38 +1,44 @@
-# Guess the Number - User Guesses
+# Guess the Number (User Guesses)
 
 ## Overview
-This version of "Guess the Number" is a simple game where the player tries to guess a randomly generated number chosen by the computer. The game provides hints after each guess, letting the player know if their guess is too high or too low until they find the correct number.
+This is a simple Python game where the computer selects a random number between 1 and 100, and the user has to guess it. The program provides feedback to help the user guess the correct number.
 
-## Features
-- The computer generates a random number between 1 and 100.
-- The player enters guesses and receives feedback ("too high", "too low", or "correct").
-- Tracks the number of attempts.
-- Handles invalid inputs gracefully.
+## How It Works
+1. The computer randomly selects a number between 1 and 100.
+2. The user enters their guess.
+3. The program responds with:
+   - "Too low! Try again." if the guess is lower than the secret number.
+   - "Too high! Try again." if the guess is higher than the secret number.
+   - "Congratulations!" if the guess is correct.
+4. The game continues until the user guesses the correct number.
 
-## How to Run
-1. Ensure you have Python installed on your system.
-2. Run the script using:
-   ```sh
-   python guess_the_number.py
+## Prerequisites
+- Python 3.x installed on your system.
+
+## How to Run the Program
+1. Clone this repository or copy the script.
+2. Run the script using the following command:
+   ```bash
+   python guess_number.py
    ```
-3. Enter your guesses when prompted.
-4. Continue guessing until you find the correct number.
+3. Follow the on-screen instructions to play the game.
 
-## Example Run
+## Example Output
 ```
-Welcome to the Number Guessing Game!
-Enter your guess (between 1 and 100): 50
-Too high! Try again.
-Enter your guess (between 1 and 100): 25
+I have chosen a number between 1 and 100. Try to guess it!
+Enter your guess: 50
 Too low! Try again.
-Enter your guess (between 1 and 100): 37
-Congratulations! You guessed the number 37 in 3 attempts.
+Enter your guess: 75
+Too high! Try again.
+...
+Congratulations! You guessed the number 63 in 5 attempts.
 ```
 
-## Future Enhancements
-- Add difficulty levels (Easy, Medium, Hard) with different number ranges.
-- Implement a scoring system based on the number of attempts.
-- Allow multiple rounds of play.
+## License
+This project is open-source and available for modification and redistribution.
 
-Enjoy playing "Guess the Number - User Guesses"! 🎉
+## Contributions
+Feel free to improve the program and submit a pull request!
+
+Happy gaming! 🎮
 

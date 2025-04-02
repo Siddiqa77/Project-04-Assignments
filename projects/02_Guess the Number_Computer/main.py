@@ -1,26 +1,26 @@
 import random
 
-def guess_the_number():
-    print("Welcome to the Number Guessing Game!")
-    number_to_guess = random.randint(1, 100)
+def computer_guesses():
+    print("Think of a number between 1 and 100, and I'll try to guess it!")
+    low, high = 1, 100
     attempts = 0
     
-    while True:
-        try:
-            guess = int(input("Enter your guess (between 1 and 100): "))
-            attempts += 1
-            
-            if guess < 1 or guess > 100:
-                print("Please enter a number between 1 and 100.")
-            elif guess < number_to_guess:
-                print("Too low! Try again.")
-            elif guess > number_to_guess:
-                print("Too high! Try again.")
-            else:
-                print(f"Congratulations! You guessed the number {number_to_guess} in {attempts} attempts.")
-                break
-        except ValueError:
-            print("Invalid input! Please enter a number.")
+    while low <= high:
+        guess = (low + high) // 2
+        attempts += 1
+        
+        print(f"Is your number {guess}?")
+        user_input = input("Enter 'h' if it's higher, 'l' if it's lower, or 'c' if correct: ").strip().lower()
+        
+        if user_input == 'c':
+            print(f"Yay! I guessed your number {guess} in {attempts} attempts.")
+            break
+        elif user_input == 'h':
+            low = guess + 1
+        elif user_input == 'l':
+            high = guess - 1
+        else:
+            print("Invalid input, please enter 'h', 'l', or 'c'.")
 
 if __name__ == "__main__":
-    guess_the_number()
+    computer_guesses()
