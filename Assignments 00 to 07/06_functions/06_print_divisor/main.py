@@ -8,7 +8,12 @@ def print_divisors(num: int):
             print(i)
 
 def main():
-    num = int(input("Enter a number: "))  # Get user input
+    # ANSI escape codes for blue and reset
+    BLUE = "\033[34m"
+    RESET = "\033[0m"
+    
+    # Input prompt in blue
+    num = int(input(f"{BLUE}Enter a number: {RESET}"))  # Get user input
     print_divisors(num)  # Call function to print divisors
 
 # There is no need to edit code beyond this point

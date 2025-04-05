@@ -1,6 +1,10 @@
 def main():
-    # Prompt user for their age
-    age = int(input("How old are you? "))
+    # ANSI escape codes for blue and reset
+    BLUE = "\033[34m"
+    RESET = "\033[0m"
+    
+    # Prompt user for their age with blue-colored input
+    age = int(input(f"{BLUE}How old are you? {RESET}"))
     
     # Define voting ages in fictional countries
     voting_ages = {

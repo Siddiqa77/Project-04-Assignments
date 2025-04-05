@@ -11,7 +11,13 @@ def double(num: int):
 # There is no need to edit code beyond this point
 
 def main():
-    num = int(input("Enter a number: "))
+    # ANSI escape codes for bold, italic, and reset
+    BOLD_ITALIC = "\033[1;3m"
+    RESET = "\033[0m"
+    
+    # Input prompt in bold and italic
+    num = int(input(f"{BOLD_ITALIC}Enter a number: {RESET}"))
+    
     num_times_2 = double(num)
     print("Double that is", num_times_2)
 

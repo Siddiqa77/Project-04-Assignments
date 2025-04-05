@@ -11,10 +11,15 @@ def main():
     
     total_cost = 0
     
+    # ANSI escape codes for bold, italic, and reset
+    BOLD_ITALIC = "\033[1;3m"
+    RESET = "\033[0m"
+    
     for fruit, price in fruit_prices.items():
         while True:
             try:
-                quantity = int(input(f"How many ({fruit}) do you want?: "))
+                # Input prompt in bold and italic
+                quantity = int(input(f"{BOLD_ITALIC}How many ({fruit}) do you want?{RESET} "))
                 if quantity < 0:
                     print("Please enter a non-negative number.")
                     continue

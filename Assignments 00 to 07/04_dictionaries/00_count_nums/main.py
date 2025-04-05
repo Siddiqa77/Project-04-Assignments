@@ -1,8 +1,13 @@
 def main():
+    # ANSI escape codes for blue and reset
+    BLUE = "\033[34m"
+    RESET = "\033[0m"
+    
     number_counts = {}
     
     while True:
-        number = input("Enter a number (or press Enter to stop): ")
+        # Display input prompt in blue
+        number = input(f"{BLUE}Enter a number (or press Enter to stop): {RESET}")
         if not number:
             break
         

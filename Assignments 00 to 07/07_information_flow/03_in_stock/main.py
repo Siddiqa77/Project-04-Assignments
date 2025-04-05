@@ -12,7 +12,12 @@ def num_in_stock(fruit):
         return 0
 
 def main():
-    fruit = input("Enter a fruit: ")
+    # ANSI escape codes for bold, italic, and reset
+    BOLD_ITALIC = "\033[1m\033[3m"  # Bold and Italic
+    RESET = "\033[0m"  # Reset formatting
+    
+    # Input prompt in bold and italic
+    fruit = input(f"{BOLD_ITALIC}Enter a fruit: {RESET}")
     stock = num_in_stock(fruit)
     if stock == 0:
         print("This fruit is not in stock.")

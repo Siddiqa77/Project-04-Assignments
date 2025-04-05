@@ -15,9 +15,15 @@ def make_sentence(word, part_of_speech):
 # There is no need to edit code beyond this point
 
 def main():
-    word = input("Please type a noun, verb, or adjective: ")
-    print("Is this a noun, verb, or adjective?")
-    part_of_speech = int(input("Type 0 for noun, 1 for verb, 2 for adjective: "))
+    # ANSI escape codes for blue and reset
+    BLUE = "\033[34m"
+    RESET = "\033[0m"
+    
+    # Input prompts in blue
+    word = input(f"{BLUE}Please type a noun, verb, or adjective: {RESET}")
+    print(f"{BLUE}Is this a noun, verb, or adjective?{RESET}")
+    part_of_speech = int(input(f"{BLUE}Type 0 for noun, 1 for verb, 2 for adjective: {RESET}"))
+    
     make_sentence(word, part_of_speech)
 
 if __name__ == '__main__':
