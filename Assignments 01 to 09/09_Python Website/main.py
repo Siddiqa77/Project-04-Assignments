@@ -41,7 +41,7 @@ if page == "Home":
         Welcome to **My Recipe Book**!  
         Here you'll find a collection of mouth-watering recipes from all around the world. 🌎
         
-        Browse the recipes or share your own favorite dish with us!
+        Browse the recipes or share your own favourite dish with us!
     """)
     st.image("https://images.unsplash.com/photo-1504674900247-0877df9cc836", caption="Cooking is an art! 🎨", use_container_width=True)
 
