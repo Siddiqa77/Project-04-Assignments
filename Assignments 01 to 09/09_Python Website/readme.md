@@ -34,7 +34,7 @@ Welcome to **My Recipe Book** — a beautifully designed Streamlit app that show
 
 3. Run the app:
    ```bash
-   streamlit run app.py
+   streamlit run main.py
    ```
 
 ---
@@ -74,7 +74,7 @@ A form where users can share their own recipes, which are then displayed below i
 
 ## 👩‍🎨 Author
 
-**Siddiqa Badar** — Frontend Developer & Digital Creator  
+**Siddiqa Badar** — Frontend Developer 
 Made with ❤️ and Streamlit
 
 ---
